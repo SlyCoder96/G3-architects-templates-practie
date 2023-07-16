@@ -26,7 +26,7 @@
 
 header {
   background: rgba(255, 144, 14, 0.1);
-  padding: 50px 240px;
+  padding: 50px 140px;
 }
 
 nav {
@@ -37,11 +37,12 @@ nav {
 
 nav > ul {
   display: flex;
+  gap: 10px;
 }
 nav li {
   list-style: none;
   margin-right: 30px;
-  font-size: 1rem;
+  font-size: 1.5vw;
   font-weight: 500;
 }
 
@@ -52,7 +53,7 @@ nav li a {
 
 .nav-title {
   color: #131313;
-  font-size: 2.8rem;
+  font-size: 3.5vw;
   font-weight: 700;
 }
 
@@ -63,7 +64,7 @@ nav li a {
 }
 
 .banner-title {
-  font-size: 4rem;
+  font-size: 6vw;
   font-weight: 700;
   color: #131313;
 }
@@ -84,6 +85,7 @@ main {
 .feature-container {
   display: flex;
   align-items: center;
+  margin: 50px 80px;
 }
 
 .feature-gallery {
@@ -92,9 +94,14 @@ main {
   gap: 1.8rem;
 }
 
+.feature-gallery img {
+  width: 100%;
+}
+
 .feature-content {
   margin-left: 70px;
   margin-right: 70px;
+  width: 62%;
 }
 
 .black-title {
@@ -113,7 +120,160 @@ main {
 }
 
 .feature-title {
-  font-size: 2.8rem;
+  font-size: 3vw;
+}
+
+/* second feature section start */
+.second-feature-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 100px;
+}
+
+.second-feature-text {
+  width: 80%;
+}
+
+.btn-batch {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  border-radius: 8px;
+  background: #ff900e;
+  border: 0;
+  padding: 45px 40px;
+  width: 342px;
+  height: 200px;
+  position: relative;
+  bottom: 100px;
+  right: 100px;
+}
+
+.ten-years {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+.snd-feature-title {
+  color: #131313;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.snd-feature-pera {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65rem;
+}
+
+.snd-feature-title-4 {
+  color: #131313;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.snd-feature-pera-4 {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65rem;
+}
+
+.second-feature-img img {
+  width: 100%;
+}
+
+/* facts section start */
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.facts-title {
+  color: #131313;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.facts-pera {
+  color: #727272;
+  font-size: 1.135rem;
+  font-weight: 400;
+  line-height: 1.36rem;
+  width: 50%;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+
+.cards {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  padding: 30px 25px;
+  width: 24%;
+}
+
+.facts-stats {
+  padding: 10px 0;
+  color: #424242;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.facts-card-title {
+  color: #727272;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* sponsor section */
+
+.sponsor-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sponsor-container img {
+  width: 15%;
+}
+
+.sponsor-title {
+  margin-bottom: 1.5rem;
+  margin-top: 6rem;
+  color: #131313;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sponsor-pera {
+  margin-bottom: 1.8rem;
+  color: #727272;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+footer {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #424242;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 50px;
 }
 
 /* responsive style */
@@ -126,6 +286,22 @@ main {
   nav {
     flex-direction: column;
   }
+
+  nav li {
+    list-style: none;
+    font-weight: 500;
+    margin: 0 10px;
+  }
+
+  nav > ul {
+    display: flex;
+    margin-left: -42px;
+  }
+
+  nav li {
+    font-size: 3.5vw;
+  }
+
   .feature-container {
     flex-direction: column;
   }
@@ -135,6 +311,85 @@ main {
   .feature-content {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .btn-re-style {
+    padding: 10px;
+    font-size: 2vw;
+  }
+
+  .facts-card-container {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+  }
+  .cards {
+    width: 100%;
+  }
+  .sponsor-container {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .sponsor-container img {
+    width: 165.833px;
+  }
+
+  footer {
+    font-size: 4.25vw;
+    text-align: center;
+  }
+
+  .snd-feature-pera,
+  .snd-feature-pera-4,
+  .facts-pera,
+  .sponsor-pera,
+  .feature-pera {
+    font-size: 1.25vw;
+  }
+
+  .second-feature-container {
+    flex-direction: column;
+  }
+
+  /* .btn-batch {
+    color: #fff;
+    font-size: 2.5vw;
+    bottom: 8.75vw;
+    right: 8.75vw;
+  } */
+
+  .btn-batch {
+    color: #fff;
+    font-size: 1.5vw;
+    padding: 0;
+    width: 17.5vw;
+    right: -17px;
+    height: 12vw;
+    line-height: 1px;
+  }
+
+  .snd-feature-title {
+    font-size: 3.5vw;
+  }
+
+  .snd-feature-title-4 {
+    font-size: 3vw;
+  }
+
+  /* .ten-years {
+    color: #fff;
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 5.85vw;
+  } */
+
+  .ten-years {
+    color: #fff;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 5.85vw;
   }
 }
 
