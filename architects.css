@@ -69,6 +69,10 @@ nav li a {
   color: #131313;
 }
 
+.banner-pera {
+  font-size: 1.3vw;
+}
+
 .banner img {
   margin-top: 20px;
   width: 100%;
@@ -185,6 +189,10 @@ main {
   line-height: 1.65rem;
 }
 
+.second-feature-img {
+  padding: 0 5px;
+}
+
 .second-feature-img img {
   width: 100%;
 }
@@ -198,7 +206,7 @@ main {
 
 .facts-title {
   color: #131313;
-  font-size: 1.75rem;
+  font-size: 2.5vw;
   font-weight: 700;
   margin-top: 3rem;
   margin-left: 2rem;
@@ -226,13 +234,13 @@ main {
   padding: 10px 0;
   color: #424242;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 2.5vw;
   font-weight: 600;
 }
 
 .facts-card-title {
   color: #727272;
-  font-size: 1.25rem;
+  font-size: 1.75vw;
   font-weight: 600;
 }
 
@@ -251,7 +259,7 @@ main {
   margin-bottom: 1.5rem;
   margin-top: 6rem;
   color: #131313;
-  font-size: 1.8rem;
+  font-size: 2.5vw;
   font-weight: 700;
   text-align: center;
 }
@@ -333,7 +341,7 @@ footer {
   }
 
   .sponsor-container img {
-    width: 165.833px;
+    width: 50%;
   }
 
   footer {
@@ -402,7 +410,8 @@ footer {
     flex-direction: column;
   }
 
-  .feature-container {
+  .feature-container,
+  .second-feature-container {
     flex-direction: column;
   }
 }
